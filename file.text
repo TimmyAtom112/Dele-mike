@@ -1,0 +1,17 @@
+musician-booking-site/
+│
+├── index.html        (Home)
+├── about.html        (About the Artist)
+├── media.html        (Photos / Videos)
+├── booking.html      (Booking Request Form)
+├── contact.html      (Call & WhatsApp)
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── assets/
+    ├── images/
+    └── footer/

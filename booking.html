@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Gospel Musician</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dele Mike Music Organization </h1>
+       <div class="menu-toggle" id="menuToggle">☰</div>
+
+     <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="booking.html" class="btn">Book Me</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Section -->
+  <section class="booking-page">
+    <h2>Request a Booking</h2>
+    <p>Please fill in the form below and we’ll get back to you shortly.</p>
+
+    <form id="bookingForm" class="booking-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+     
+      <select name="eventType" required>
+        <option value="">Select Event Type</option>
+        <option>Church Program</option>
+        <option>Gospel Concert</option>
+        <option>Wedding</option>
+        <option>Birthday Parties</option>
+        <option>Birthday Jingle</option>
+        <option>Other</option>
+      </select>
+     <div class="date">
+         <label for="Date">Event date:</label>
+        <input type="date" name="eventDate" required />
+     </div> 
+      <input type="text" name="location" placeholder="Event Location" required />
+
+      <select name="duration" required>
+        <option value="">Performance Duration</option>
+        <option>30 Minutes</option>
+        <option>1 Hour</option>
+        <option>2 Hours</option>
+        <option>More</option>
+      </select>
+
+      <textarea name="message" placeholder="Additional Message" rows="4"></textarea>
+
+<br><br>
+      <button type="submit" class="btn primary-btn">Submit Booking Request</button>
+    </form>
+
+    <p class="form-note">
+      This is a booking request only. Confirmation will be done via phone or email.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Dele Mike Music Organization. All rights reserved.</p>
+  </footer>
+ <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("e6wVcCvVRtK62PuYv"); // Replace with your EmailJS Public Key
+  })();
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

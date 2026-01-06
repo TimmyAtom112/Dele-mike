@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background: #111;
+  padding: 15px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links .btn {
+  background: #f5b301;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../assets/images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  background: #f5b301;
+  color: #000;
+  font-weight: bold;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #f5b301;
+  color: #f5b301;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about-preview, .cta {
+  background: #fff;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.about-page p {
+  max-width: 800px;
+  margin: 15px auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.services {
+  background: #fdfdfd;
+}
+
+.services-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.services-list li {
+  padding: 10px 0;
+  font-size: 1.05rem;
+}
+.media-page p {
+  margin-bottom: 30px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Videos */
+.video-section {
+  background: #fff;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.videos iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.booking-page {
+  max-width: 800px;
+  margin: auto;
+}
+
+.booking-form {
+  display: grid;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.booking-form button {
+  border: none;
+  cursor: pointer;
+}
+
+.form-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.contact-page {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-btn {
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 250px;
+  text-align: center;
+}
+
+.contact-btn.call {
+  background: #111;
+  color: #fff;
+}
+
+.contact-btn.whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.email {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+/* Mobile Navigation */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 40px 20px;
+  }
+
+  /* Forms */
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+.date {
+    margin-right: 100px;
+}
+
+  /* Contact buttons */
+  .contact-btn {
+    width: 100%;
+  }
+}
